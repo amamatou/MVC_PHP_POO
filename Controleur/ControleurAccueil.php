@@ -7,16 +7,16 @@ class ControleurAccueil
 {
 	private $billet;
 
-	public function construct() 
+	public function __construct() 
 	{
 		$this->billet = new Billet();
 	}
 
 	// Affiche la liste de tous les billets du blog
-	public function accueil() 
+	public function accueil()
 	{
 		$billets = $this->billet->getBillets();
 		$vue = new Vue("Accueil");
-		$vue->generer(array('billets' => $billets));	
+		$vue->generer(array('billets' => $billets));
 	}
 }
