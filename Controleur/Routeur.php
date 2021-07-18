@@ -9,7 +9,7 @@ class Routeur
 	private $ctrlAccueil;
 	private $ctrlBillet;
 
-	public function construct() 
+	public function __construct() 
 	{
 		$this->ctrlAccueil = new ControleurAccueil();
 		$this->ctrlBillet = new ControleurBillet();
