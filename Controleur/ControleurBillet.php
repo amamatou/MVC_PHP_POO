@@ -9,7 +9,7 @@ class ControleurBillet
 	private $billet;
 	private $commentaire;
 
-	public function construct() 
+	public function __construct() 
 	{
 		$this->billet = new Billet();
 		$this->commentaire = new Commentaire();
